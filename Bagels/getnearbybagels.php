@@ -9,10 +9,12 @@
 
 
   $rows = array();
-  while ($row = mysqli_fetch_assoc($result)) {
-      $rows[] = $row;
+  if(mysqli_num_rows($query) == 1){
+    while ($row = mysqli_fetch_assoc($result)) {
+        $rows[] = $row;
+    }
+    print json_encode($rows);
   }
-  print json_encode($rows);
 
 
 
