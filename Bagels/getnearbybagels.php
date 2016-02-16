@@ -9,7 +9,7 @@
 
 
   $rows = array();
-  if(mysqli_num_rows($query) == 1){
+  if(mysqli_num_rows($result) == 1){
     while ($row = mysqli_fetch_assoc($result)) {
         $rows[] = $row;
     }
