@@ -1,0 +1,10 @@
+{
+    "name": "Cj1m/SoundBagelBackend",
+    "description": "Backend for SoundBagel android music discovery app.",
+    "authors": [
+        {
+            "name": "Christopher McKay",
+            "email": "cj1mckay@gmail.com"
+        }
+    ]
+}
