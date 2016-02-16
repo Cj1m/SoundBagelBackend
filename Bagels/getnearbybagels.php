@@ -5,7 +5,7 @@
   $lng = is_number($_POST['long']);
   $radius = is_number($_POST['radius']);
 
-  $result = mysqli_query($connection,"SELECT *, ( 6371 * acos( cos( radians($lat) ) * cos( radians( loc_lat ) ) * cos( radians( loc_lng ) - radians($lng) ) + sin( radians($lat) ) * sin( radians( loc_lat ) ) ) ) AS distance FROM BAGELS HAVING distance < $radius ORDER BY distance;");
+  $result = mysqli_query($connection,"SELECT *, ( 6371 * acos( cos( radians($lat) ) * cos( radians( lat_pos ) ) * cos( radians( lng_pos ) - radians($lng) ) + sin( radians($lat) ) * sin( radians( lat_pos ) ) ) ) AS distance FROM BAGELS HAVING distance < $radius ORDER BY distance;");
 
 
   $rows = array();
