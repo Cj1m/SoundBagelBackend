@@ -1,4 +1,5 @@
 <?php
+  //yumyum
   $connection = mysqli_connect('mysql.hostinger.co.uk','u986542883_cj1m','rarepepes123','u986542883_bagel');
 
   $lat = is_number($_POST['lat']);
@@ -32,3 +33,4 @@
      }
   }
 ?>
+
